@@ -10,6 +10,7 @@
   --white: #ffffff;
   --gray-light: #eeeeee;
   --active: #d4b422;
+  --frosted-mint: #F0FFCE;
 
   --completed: #064427;
 
@@ -128,8 +129,8 @@ body {
 }
 
 .navigation ul li a:hover {
-  background-color: var(--border-dark);
-  color: var(--white);
+  background-color: var(--frosted-mint);
+  color: var(--primary-dark);
 }
 
 /* Wayfinding */
