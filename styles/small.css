@@ -1,0 +1,283 @@
+/* ----- ROOT VARIABLES ----- */
+
+:root {
+  /* Colors */
+  --primary: #1f1f1f;
+  --primary-light: #2a2a2a;
+  --primary-dark: #111;
+  --border-dark: #444;
+  --border-light: #3a3a3a;
+  --white: #ffffff;
+  --gray-light: #eeeeee;
+  --active: #d4b422;
+
+  --completed: #064427;
+
+  /* Typography */
+  --font-primary: "Play", sans-serif;
+  --font-secondary: "Poppins", sans-serif;
+
+  --font-size-sm: 0.9rem;
+  --font-size-base: 1rem;
+  --font-size-md: 1.2rem;
+  --font-size-lg: 1.6rem;
+
+  /* Spacing */
+  --spacing-xs: 0.3rem;
+  --spacing-sm: 0.6rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.2rem;
+
+  /* Border Radius */
+  --radius-sm: 5px;
+  --radius-md: 8px;
+
+  /* Layout */
+  --min-touch: 44px;
+
+  /* Transitions */
+  --transition-fast: 0.3s ease;
+}
+
+
+/* -------- RESET ------*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-secondary);
+}
+
+
+/* -----   HEADER ----- */
+body {
+  background-color: #d9d9d9;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-sm) var(--spacing-lg);
+  background-color: var(--primary);
+  border-bottom: 1px solid var(--white);
+  color: var(--white);
+}
+
+.logo-group {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.site-name {
+  font-family: var(--font-secondary);
+  font-weight: 600;
+  font-size: var(--font-size-md);
+  color: var(--white);
+}
+
+
+/* -----   HAMBURGER   ----- */
+
+.hamburger {
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: var(--min-touch);
+  height: var(--min-touch);
+  font-size: var(--font-size-lg);
+  color: var(--white);
+}
+
+.hamburger::before {
+  content: "\2630"; /* ☰ */
+}
+
+.hamburger.show::before {
+  content: "\00D7"; /* × */
+}
+
+
+/* ----- NAVIGATION (MOBILE) ------ */
+
+.navigation {
+  display: none;
+  background-color: var(--primary-light);
+}
+
+.navigation.show {
+  display: block;
+}
+
+.navigation ul {
+  list-style: none;
+}
+
+.navigation ul li a {
+  display: block;
+  padding: var(--spacing-md);
+  font-family: var(--font-primary);
+  font-size: var(--font-size-base);
+  color: var(--white);
+  text-decoration: none;
+  border-top: 1px solid var(--white);
+  min-height: var(--min-touch);
+  transition: background var(--transition-fast);
+}
+
+.navigation ul li a:hover {
+  background-color: var(--border-dark);
+  color: var(--white);
+}
+
+/* Wayfinding */
+.navigation ul li.current a {
+  background-color: var(--active);
+  font-weight: 600;
+  color: var(--primary-dark);
+}
+
+
+/* ----- MAIN CONTENT ----- */
+
+main {
+  padding: var(--spacing-md);
+}
+
+section {
+  background: var(--white);
+  padding: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+  border-radius: var(--radius-md);
+}
+
+section h2 {
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 0.5rem;
+  margin: -1rem -1rem 1rem -1rem;
+  font-size: 1rem;
+}
+
+/* FORCE two columns */
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.top-grid {
+  display: block;
+}
+
+/* ----- CARDS----- */
+.card {
+  background: #f3f3f3;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card-header {
+  background: #021725;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.second-paragraph {
+  margin-top: 1rem;
+}
+
+/* Photo */
+.photo-body {
+  display: flex;
+  justify-content: center;
+}
+
+.photo-body img {
+  width: 200px;
+  border-radius: 8px;
+}
+/* ----- BUTTONS ----- */
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.buttons button {
+  flex: 1;
+  padding: 0.6rem;
+  border: 1px solid var(--border-dark);
+  background-color: #093f55;
+  cursor: pointer;
+  color: var(--white);
+}
+
+button.active {
+  background: #d4b422;
+  color: var(--primary-dark);
+  border-color: var(--border-light);
+}
+
+/* ----- COURSE CARD ----- */
+
+#course-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+}
+
+.courses h2 {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.course-card {
+  background: var(--white);
+  padding: 1.2rem;
+  margin: 0.8rem 0;
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  text-align: center;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.completed {
+  background: var(--completed);
+  color: var(--white);
+}
+
+
+/* --- FOOTER ---- */
+
+footer {
+  background: var(--primary);
+  color: var(--white);
+  text-align: center;
+  padding: var(--spacing-md);
+}
+
+footer .social {
+  margin-bottom: 0.5rem;
+}
+
+footer .social a {
+  margin: 0 10px;
+  color: var(--white);
+  font-weight: bold;
+  text-decoration: none;
+}

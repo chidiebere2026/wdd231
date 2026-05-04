@@ -1,0 +1,210 @@
+/* ----- EXTRA SMALL DEVICES (< 400px) ----- */
+
+@media only screen and (max-width: 28rem) { 
+
+  /* Header */
+  .site-header {
+    padding: 0.5rem 0.8rem;
+  }
+
+  .site-name {
+    font-size: 0.95rem;
+  }
+
+  .hamburger {
+    font-size: 1.4rem;
+  }
+
+  /* Navigation */
+  .navigation ul li a {
+    font-size: 0.9rem;
+    padding: 0.8rem;
+  }
+
+  /* Main spacing */
+  main {
+    padding: 0.8rem;
+  }
+
+  section {
+    padding: 0.8rem;
+  }
+
+  section h2 {
+    font-size: 0.9rem;
+  }
+
+   .container {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+  }
+
+   .buttons {
+    flex-direction: column;
+  }
+
+  .buttons button {
+    font-size: 0.9rem;
+    padding: 0.7rem;
+  }
+
+    #course-container {
+    grid-template-columns: 1fr;
+  }
+
+  .course-card {
+    font-size: 0.85rem;
+    padding: 1rem;
+  }
+
+   .photo-body img {
+    width: 200px;
+  }
+  footer {
+    font-size: 0.85rem;
+    padding: 0.8rem;
+  }
+}
+
+@media only screen and (min-width: 38rem) {
+    header, nav, main, footer {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+  .hamburger {
+    display: none;
+  }
+
+  .navigation {
+    display: block;
+    background-color: #1f1f1f;
+  }
+
+  .navigation ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .navigation ul li {
+    flex: none;
+  }
+
+  .navigation ul li a {
+    border-top: none;
+    border-right: 1px solid #444;
+    padding: 1rem 1.2rem;
+  }
+
+  .navigation ul li:last-child a {
+    border-right: none;
+  }
+
+ .about-container {
+    grid-template-columns: 1fr;
+  }
+
+  .flag-section {
+    flex-direction: column;
+  }
+
+    .courses {
+        grid-column: span 2;
+    }
+}
+
+
+   
+/* ----- LARGE SCREENS (DESKTOP) ----- */
+
+@media only screen and (min-width: 64rem) {
+
+  /* Layout Width */
+  header, nav, main, footer {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  main {
+    padding: 2rem 3rem;
+  }
+
+  /* Header Improvements */
+  .site-header {
+    padding: 1rem 3rem;
+  }
+
+  .site-name {
+    font-size: 1.5rem;
+  }
+
+  /* Navigation Spacing */
+  .navigation ul li a {
+    padding: 1rem 1.5rem;
+    font-size: 1.05rem;
+  }
+  
+.top-grid {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 2rem;
+  }
+
+   .container h1 {
+    grid-column: 1 / -1;
+  }
+  
+  #course-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Section Styling */
+  section {
+    padding: 2rem;
+  }
+
+  section h2 {
+    font-size: 1.2rem;
+  }
+
+  /* Cards */
+  .card {
+    border-radius: 12px;
+  }
+
+  .card-body {
+    padding: 2rem;
+  }
+
+  /* Photo */
+  .photo-body img {
+    width: 250px;
+  }
+
+  /* Buttons */
+  .buttons button {
+    padding: 0.8rem;
+    font-size: 1rem;
+  }
+
+  /* Course Grid – wider spacing */
+  #course-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  .course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 8px 20px;
+  }
+
+  /* Footer */
+  footer {
+    padding: 2rem;
+  }
+}
+
+html, body {
+  overflow-x: hidden;
+}
