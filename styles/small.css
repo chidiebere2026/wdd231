@@ -106,6 +106,7 @@ body {
 .navigation {
   display: none;
   background-color: var(--primary-light);
+  color: var(--white);
 }
 
 .navigation.show {
