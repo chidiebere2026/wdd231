@@ -34,7 +34,7 @@
   --radius-md: 8px;
 
   /* Layout */
-  --min-touch: 44px;
+  --min-touch: 60px;
 
   /* Transitions */
   --transition-fast: 0.3s ease;
@@ -50,6 +50,9 @@
   font-family: var(--font-secondary);
 }
 
+html, body {
+  overflow-x: hidden;
+}
 
 /* -----   HEADER ----- */
 body {
@@ -135,7 +138,7 @@ body {
 }
 
 /* Wayfinding */
-.navigation ul li.current a {
+.navigation ul li.active a {
   background-color: var(--active);
   font-weight: 600;
   color: var(--primary-dark);
@@ -172,7 +175,9 @@ section h2 {
 }
 
 .top-grid {
-  display: block;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
 }
 
 /* ----- CARDS----- */
@@ -206,20 +211,21 @@ section h2 {
 }
 
 .photo-body img {
-  width: 200px;
-  border-radius: 8px;
+  width: 100%;
+  max-width: 200px;
+  height: auto;
 }
+
 /* ----- BUTTONS ----- */
 
 .buttons {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   gap: 1rem;
-  margin-bottom: 1rem;
 }
 
 .buttons button {
-  flex: 1;
+  flex: 1 1 80px;
   padding: 0.6rem;
   border: 1px solid var(--border-dark);
   background-color: #093f55;
@@ -237,7 +243,7 @@ button.active {
 
 #course-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr;
   gap: 0.5rem;
 }
 
