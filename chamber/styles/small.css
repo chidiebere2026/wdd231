@@ -157,6 +157,13 @@ main {
     padding: 1.5rem 1rem;
 }
 
+.directory-title {
+    font-family: var(--heading-font);
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
 /* =========================
    DIRECTORY GRID
 ========================= */
