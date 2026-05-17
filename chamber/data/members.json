@@ -25,7 +25,7 @@
   },
   {
     "name": "Summit Bakery & Cafe",
-    "address": "12 Alpine Crest Ridge",
+    "address": "12 Iweka Road",
     "phone": "(555) 012-3456",
     "website": "https://example.com/summit",
     "image": "images/member-summit.png",
@@ -49,7 +49,7 @@
   },
   {
     "name": "Cornerstone Legal Partners",
-    "address": "300 Justice Row, Suite 10",
+    "address": "300 Aba Road, Suite 10",
     "phone": "(555) 018-4455",
     "website": "https://example.com/cornerstone",
     "image": "images/member-cornerstone.png",
@@ -57,7 +57,7 @@
   },
   {
     "name": "Nova Star Digital Media",
-    "address": "412 Cyber Galleria Walk",
+    "address": "412 Enugu GSM Vilalge",
     "phone": "(555) 013-7711",
     "website": "https://example.com/novastar",
     "image": "images/member-novastar.png",
@@ -65,7 +65,7 @@
   },
   {
     "name": "Redwood Construction Corp",
-    "address": "604 Timberline Industrial Way",
+    "address": "604 Enugu Industrial Way",
     "phone": "(555) 016-5599",
     "website": "https://example.com/redwood",
     "image": "images/member-redwood.png",
