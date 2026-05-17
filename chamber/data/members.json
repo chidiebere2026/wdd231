@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Apex Tech Solutions",
+    "address": "102 Innovation Way, Suite A",
+    "phone": "(555) 019-2834",
+    "website": "https://example.com/apex",
+    "image": "images/member-apex.png",
+    "membershipLevel": 3
+  },
+  {
+    "name": "Green Valley Organics",
+    "address": "450 Farmhouse Lane",
+    "phone": "(555) 014-9921",
+    "website": "https://example.com/greenvalley",
+    "image": "images/member-green.png",
+    "membershipLevel": 2
+  },
+  {
+    "name": "Beacon Street Financial",
+    "address": "789 Financial District Blvd",
+    "phone": "(555) 017-8833",
+    "website": "https://example.com/beacon",
+    "image": "images/member-beacon.png",
+    "membershipLevel": 1
+  },
+  {
+    "name": "Summit Bakery & Cafe",
+    "address": "12 Alpine Crest Ridge",
+    "phone": "(555) 012-3456",
+    "website": "https://example.com/summit",
+    "image": "images/member-summit.png",
+    "membershipLevel": 1
+  },
+  {
+    "name": "Vanguard Marketing Group",
+    "address": "55 Media Plaza, Floor 4",
+    "phone": "(555) 015-6677",
+    "website": "https://example.com/vanguard",
+    "image": "images/member-vanguard.png",
+    "membershipLevel": 3
+  },
+  {
+    "name": "Blue Horizon Shipping",
+    "address": "890 Harbor View Terminal",
+    "phone": "(555) 011-2244",
+    "website": "https://example.com/bluehorizon",
+    "image": "images/member-blue.png",
+    "membershipLevel": 2
+  },
+  {
+    "name": "Cornerstone Legal Partners",
+    "address": "300 Justice Row, Suite 10",
+    "phone": "(555) 018-4455",
+    "website": "https://example.com/cornerstone",
+    "image": "images/member-cornerstone.png",
+    "membershipLevel": 3
+  },
+  {
+    "name": "Nova Star Digital Media",
+    "address": "412 Cyber Galleria Walk",
+    "phone": "(555) 013-7711",
+    "website": "https://example.com/novastar",
+    "image": "images/member-novastar.png",
+    "membershipLevel": 2
+  },
+  {
+    "name": "Redwood Construction Corp",
+    "address": "604 Timberline Industrial Way",
+    "phone": "(555) 016-5599",
+    "website": "https://example.com/redwood",
+    "image": "images/member-redwood.png",
+    "membershipLevel": 1
+  }
+]
