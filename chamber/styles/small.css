@@ -226,6 +226,10 @@ main {
     color: var(--text-primary);
 }
 
+.list .card img {
+  display: none;
+}
+
 /* =========================
    FOOTER
 ========================= */

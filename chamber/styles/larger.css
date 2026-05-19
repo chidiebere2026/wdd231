@@ -85,6 +85,9 @@
     flex: 1;
   }
 
+.list .card img {
+  display: none;
+}
 
 /* Footer  */
 .footer-container {
