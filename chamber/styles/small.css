@@ -29,9 +29,17 @@
     --card-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
+
 /* =========================
    GLOBAL STYLES
 ========================= */
+
+* {
+        margin: 0;
+        padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -40,7 +48,7 @@ body {
     background-color: var(--secondary-color);
 }
 
-h1, h2, h3, h4 {
+h1, h2 {
     font-family: var(--heading-font);
     font-weight: bold;
 }
@@ -48,14 +56,9 @@ h1 {
     font-size: 2rem;
 }
 h2 {
-    font-size: 1.75rem;
-}
-h3 {
     font-size: 1.5rem;
 }
-h4 {
-    font-size: 1.25rem;
-}
+
 
 /* =========================
    REUSABLE UTILITIES
@@ -163,7 +166,6 @@ header {
 main {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 1.5rem 1rem;
 }
 
 .directory-title {
@@ -294,7 +296,6 @@ footer {
 .home-grid h2 {
     font-size: 2rem;
     margin: 1rem 0;
-    border-bottom: 2px solid #333;
 }
 
 /* --- Hero Element --- */
@@ -353,9 +354,9 @@ footer {
     overflow: hidden;
 }
 
-.card h3 {
-    background-color: #333;
-    color: #fff;
+.card h2 {
+    background-color: var(--primary-color);
+    color: var(--white);
     margin: 0;
     padding: 0.75rem;
     font-size: 1.1rem;

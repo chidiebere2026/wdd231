@@ -49,19 +49,32 @@
     <main class="home-grid">
     <section class="hero">
         <picture>
-            <source srcset="images/enugu-large.webp" media="(min-width: 600px)">
-            <img src="" alt="Enugu City Business District Hero Banner" class="hero-img">
-        </picture>
+    <!-- Large screens -->
+    <source 
+        srcset="images/enugu-large.webp" 
+        media="(min-width: 1024px)">
+
+    <!-- Medium screens -->
+    <source 
+        srcset="images/enugu-medium.webp" 
+        media="(min-width: 600px)">
+
+    <!-- Small screens fallback -->
+    <img 
+        src="images/enugu-small.webp" 
+        alt="Enugu City Business District Hero Banner" 
+        class="hero-img">
+</picture>
         <div class="hero-cta">
             <a href="join.html" class="cta-btn">Join Us</a>
         </div>
     </section>
 
-    <h2>Home</h2>
+    <h1>Home</h1>
 
     <div class="info-grid">
         <section class="card events-card">
-            <h3>Events</h3>
+            <h2>Events</h2>
             <div class="card-content">
                 <p><strong>Upcoming Business Summit 2026</strong></p>
                 <p>Join us this Friday for our quarterly networking cocktail mixer at Ogui Road.</p>
@@ -69,14 +82,14 @@
         </section>
 
         <section class="card weather-current">
-            <h3>Current Weather</h3>
+            <h2>Current Weather</h2>
             <div id="current-weather-content" class="card-content weather-layout">
                 <p>Loading current weather...</p>
             </div>
         </section>
 
         <section class="card weather-forecast">
-            <h3>Weather Forecast</h3>
+            <h2>Weather Forecast</h2>
             <div id="forecast-content" class="card-content">
                 <p>Loading forecast...</p>
             </div>
@@ -84,7 +97,7 @@
     </div>
 
     <section class="spotlight-section">
-        <h3>Chamber Member Spotlights</h3>
+        <h2>Chamber Member Spotlights</h2>
         <div id="spotlight-container" class="spotlight-grid">
             <p>Loading featured members...</p>
         </div>
