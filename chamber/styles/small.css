@@ -40,6 +40,23 @@ body {
     background-color: var(--secondary-color);
 }
 
+h1, h2, h3, h4 {
+    font-family: var(--heading-font);
+    font-weight: bold;
+}
+h1 {
+    font-size: 2rem;
+}
+h2 {
+    font-size: 1.75rem;
+}
+h3 {
+    font-size: 1.5rem;
+}
+h4 {
+    font-size: 1.25rem;
+}
+
 /* =========================
    REUSABLE UTILITIES
 ========================= */
@@ -139,14 +156,6 @@ header {
     font-family: var(--nav-font);
 }
 
-/* =========================
-   DARK MODE TOGGLE
-========================= */
-.mode-toggle-li {
-    display: flex;
-    justify-content: center;
-    padding: 0.75rem;
-}
 
 /* =========================
    MAIN CONTENT
@@ -269,4 +278,151 @@ footer {
 
 .social-links a:hover {
     color: var(--accent-color);
+}
+
+/* =========================
+   HOME PAGE SPECIFIC STYLES
+========================= */
+
+/* --- Main Content Base Layout --- */
+.home-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
+.home-grid h2 {
+    font-size: 2rem;
+    margin: 1rem 0;
+    border-bottom: 2px solid #333;
+}
+
+/* --- Hero Element --- */
+.hero {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+}
+
+.hero-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    min-height: 250px;
+    background-color: #ccc; 
+}
+
+.hero-cta {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.cta-btn {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: var(--text-primary);
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    transition: background 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.info-grid {
+    display: flex;
+    flex-direction: column;
+    gap: var(--padding-medium); 
+   
+}
+
+/* --- Cards Design Structure --- */
+.card {
+    background-color: var(--card-surface);
+    box-shadow: var(--card-shadow);
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.card h3 {
+    background-color: #333;
+    color: #fff;
+    margin: 0;
+    padding: 0.75rem;
+    font-size: 1.1rem;
+}
+
+.card-content {
+    padding: 1rem;
+}
+
+/* Weather  */
+.weather-layout img {
+    float: left;
+    width: 90px;
+    height: 90px;
+}
+
+.weather-layout ul {
+    list-style: none;
+    padding-left: 80px;
+    margin: 0;
+}
+
+.forecast-day {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ccc;
+}
+.forecast-day:last-child {
+    border-bottom: none;
+}
+
+/* --- Business Spotlight Layout --- */
+.spotlight-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.spotlight-card {
+    background-color: var(--card-surface);
+    box-shadow: var(--card-shadow);
+    border: 1px solid #bbb;
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.spotlight-card h4 {
+    margin: 0 0 0.25rem 0;
+    font-size: 1.25rem;
+}
+
+.spotlight-card .tagline {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.spotlight-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: left;
+    gap: 1rem;
+}
+
+.spotlight-logo {
+    max-width: 80px;
+    height: auto;
+    background: #bbb;
 }
