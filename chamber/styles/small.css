@@ -41,8 +41,6 @@
 }
 
 body {
-    margin: 0;
-    padding: 0;
     font-family: Arial, sans-serif;
     color: var(--text-primary);
     background-color: var(--secondary-color);
@@ -195,12 +193,16 @@ main {
    MEMBER CARDS
 ========================= */
 .card {
+    background-color: var(--card-surface);
+    box-shadow: var(--card-shadow);
+    border-radius: var(--radius);
     padding: var(--padding-medium);
+    margin-bottom: 1.5rem;
     text-align: center;
     line-height: 1.5;
+    overflow: hidden;
 }
 
-.card,
 .home-card,
 .spotlight-card,
 #submission-summary {
@@ -345,15 +347,6 @@ footer {
 }
 
 /* --- Cards Design Structure --- */
-.card {
-    background-color: var(--card-surface);
-    box-shadow: var(--card-shadow);
-    margin-bottom: 1.5rem;
-    padding: 1rem;
-    border-radius: 4px;
-    overflow: hidden;
-}
-
 .card h2 {
     background-color: var(--primary-color);
     color: var(--white);
