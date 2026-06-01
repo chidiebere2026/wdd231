@@ -392,6 +392,12 @@ footer {
     gap: 1.5rem;
 }
 
+.spotlight-section h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
 .spotlight-card {
     background-color: var(--card-surface);
     box-shadow: var(--card-shadow);
