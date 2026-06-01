@@ -297,7 +297,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr;
     gap: var(--padding-large);
-    padding: var(--padding-medium);
+    padding: var(--padding-large);
 }
 
 .home-grid h2 {
