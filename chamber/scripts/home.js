@@ -132,3 +132,15 @@ function renderSpotlights(selectedMembers) {
         container.appendChild(card);
     });
 }
+
+// JavaScript for Hamburger
+const hamburger = document.querySelector("#hamburger");
+const nav = document.querySelector("#navigation"); 
+hamburger.addEventListener("click", () => {
+    nav.classList.toggle("open");
+    hamburger.textContent = nav.classList.contains("open") ? "✖" : "☰";
+});
+
+// Footer Get Current Year and Last Modified Date
+document.getElementById("current-year").textContent = new Date().getFullYear();
+document.getElementById("last-modified").textContent = document.lastModified;
