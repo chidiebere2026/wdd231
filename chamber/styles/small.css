@@ -294,9 +294,10 @@ footer {
 
 /* --- Main Content Base Layout --- */
 .home-grid {
-    max-width: 1200px;
-    margin: 0 auto;
-    
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--padding-large);
+    padding: var(--padding-small);
 }
 
 .home-grid h2 {

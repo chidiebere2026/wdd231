@@ -41,8 +41,8 @@
 
     #navigation a:hover,
     #navigation a.active {
-        color:var(--accent-color);
-        text-decoration: underline;
+        background-color: var(--accent-color);
+        color: var(--text-primary);
     }
     
     .mode-toggle-li {
@@ -88,6 +88,26 @@
 .list .card img {
   display: none;
 }
+ 
+.home-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    
+}
+
+  .weather-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .spotlights {
+    grid-template-columns: repeat(3, 1fr);
+  }
+.join-main {
+        grid-template-columns: 1fr 1fr; 
+    }
+
 
 /* Footer  */
 .footer-container {
