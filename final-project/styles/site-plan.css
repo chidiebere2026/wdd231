@@ -1,0 +1,274 @@
+/* ==========================================================================
+   DESIGN SYSTEM VARIABLE DEFINITIONS 
+   ========================================================================== */
+:root {
+    --primary-color: #1E3A8A;     
+    --secondary-color: #0D9488;   
+    --text-dark: #1F2937;         
+    --bg-light: #F9FAFB;          
+    --bg-card: #FFFFFF;           
+    --border-color: #E5E7EB;      
+    --font-heading: 'Play', system-ui, -apple-system, sans-serif;
+    --font-body: 'Roboto', system-ui, -apple-system, sans-serif;
+}
+
+/* ==========================================================================
+   BASE STYLES & RESET
+   ========================================================================== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-body);
+    line-height: 1.6;
+    color: var(--text-dark);
+    background-color: var(--bg-light);
+    padding: 0;
+}
+
+/* ==========================================================================
+   TYPOGRAPHY
+   ========================================================================== */
+h1, h2, h3, h4 {
+    font-family: var(--font-heading);
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+p {
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+    font-size: 1rem;
+}
+
+h1 { font-size: 2.2rem; }
+h2 { font-size: 1.6rem; margin-top: 1rem; color: var(--primary-color); }
+h3 { font-size: 1.2rem; color: var(--secondary-color); }
+
+hr {
+    border: 0;
+    height: 1px;
+    background: var(--border-color);
+    margin: 2.5rem 0;
+}
+
+/* ==========================================================================
+   LAYOUT STRUCTURE
+   ========================================================================== */
+header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+header h1, header h2 {
+    color: white;
+}
+
+header h2 {
+    font-weight: 300;
+    font-size: 1.2rem;
+    margin-top: 0.25rem;
+}
+
+.author-credit {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    opacity: 0.9;
+    letter-spacing: 0.5px;
+}
+
+nav {
+    background-color: #111827; 
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: #F9FAFB;
+    text-decoration: none;
+    padding: 0.8rem 1.2rem;
+    font-family: var(--font-heading);
+    font-size: 0.9rem;
+    transition: background 0.2s ease;
+}
+
+nav a:hover {
+    background-color: var(--secondary-color);
+}
+
+main {
+    max-width: 960px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+/* ==========================================================================
+   COMPONENTS & CONTENT CARDS
+   ========================================================================== */
+.section-intro {
+    margin-bottom: 1rem;
+    font-style: italic;
+    color: #4B5563;
+}
+
+.card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+ul {
+    list-style-position: inside;
+    margin-left: 0.5rem;
+}
+
+ul li {
+    background: var(--bg-card);
+    border-left: 4px solid var(--secondary-color);
+    padding: 1rem;
+    margin-bottom: 0.75rem;
+    list-style-type: none;
+    border-radius: 0 4px 4px 0;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.02);
+}
+
+/* Color Scheme Swatch Blocks */
+.color-palette {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.color-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+    border-radius: 6px;
+    color: white;
+    font-family: var(--font-heading);
+    font-weight: bold;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+}
+
+.color-primary { background-color: #1E3A8A; }
+.color-secondary { background-color: #0D9488; }
+.color-dark { background-color: #1F2937; }
+.color-light { 
+    background-color: #F9FAFB; 
+    color: #1F2937; 
+    border: 1px solid var(--border-color);
+    text-shadow: none;
+}
+
+.color-box span:last-child {
+    font-size: 0.8rem;
+    font-weight: normal;
+    margin-top: 0.25rem;
+    opacity: 0.9;
+}
+
+/* ==========================================================================
+   WIREFRAME SIMULATOR GRAPHICS (CSS-Only Layout Outlines)
+   ========================================================================== */
+.wireframe-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.wireframe-box {
+    background: #E5E7EB;
+    border: 2px dashed #9CA3AF;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.wireframe-box h4 {
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #374151;
+}
+
+.wf-element {
+    background: #FFFFFF;
+    border: 1px solid #9CA3AF;
+    padding: 0.75rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #6B7280;
+    font-family: monospace;
+}
+
+.wf-element.header, .wf-element.footer, .wf-element.nav, .wf-element.hero {
+    background: #F3F4F6;
+    font-weight: bold;
+}
+
+.header-desktop {
+    display: flex;
+    justify-content: space-between;
+    background: #F3F4F6;
+    border: 1px solid #9CA3AF;
+    padding: 0.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.wf-sub {
+    font-size: 0.8rem;
+    font-family: monospace;
+    color: #6B7280;
+}
+
+.wf-grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+}
+
+/* ==========================================================================
+   GLOBAL SITE FOOTER
+   ========================================================================== */
+footer {
+    background-color: #1F2937;
+    color: #9CA3AF;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    font-size: 0.85rem;
+    margin-top: 4rem;
+}
+
+/* ==========================================================================
+   RESPONSIVE MEDIA QUERIES
+   ========================================================================== */
+@media (min-width: 768px) {
+    .wireframe-container {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .mobile-view {
+        flex: 1;
+        max-width: 340px;
+    }
+
+    .desktop-view {
+        flex: 2;
+    }
+}
