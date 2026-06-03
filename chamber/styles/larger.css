@@ -158,3 +158,67 @@
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
 }
+
+@media (min-width: 1025px) {
+    .discover-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        grid-template-areas:
+            "card1 card2"
+            "card3 card4"
+            "card5 card6"
+            "card7 card8";
+        gap: 30px;
+    }
+
+    .discover-card {
+    display: grid;
+    /* Two columns: Image (left) and Content (right) */
+    grid-template-columns: 250px 1fr; 
+    grid-template-areas: 
+        "figure title"
+        "figure addr"
+        "figure desc"
+        "figure btn";
+    gap: 10px 20px;
+    align-items: start;
+}
+
+/* Link the actual HTML tags to these names */
+.discover-card figure { 
+    grid-area: figure; 
+    margin: 0; 
+}
+
+.discover-card h2 { 
+    grid-area: title; 
+    margin: 0; 
+    font-size: 1.5rem; 
+}
+
+.discover-card address { 
+    grid-area: addr; 
+    font-style: italic; 
+    margin: 5px 0; 
+}
+
+.discover-card p { 
+    grid-area: desc; 
+    margin: 0; 
+}
+
+.discover-card button { 
+    grid-area: btn; 
+    justify-self: start; 
+    margin-top: 10px;
+}
+}
+
+.card-1 { grid-area: card1; }
+.card-2 { grid-area: card2; }
+.card-3 { grid-area: card3; }
+.card-4 { grid-area: card4; }
+.card-5 { grid-area: card5; }
+.card-6 { grid-area: card6; }
+.card-7 { grid-area: card7; }
+.card-8 { grid-area: card8; }
