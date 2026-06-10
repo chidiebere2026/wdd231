@@ -61,19 +61,14 @@ if (!lastVisit) {
 
 localStorage.setItem("lastVisit", now);
 
-// Hamburger Menu
-
+// JavaScript for Hamburger
 const hamburger = document.querySelector("#hamburger");
-const nav = document.querySelector("#primary-nav");
+const nav = document.querySelector("#navigation"); 
+hamburger.addEventListener("click", () => {
+    nav.classList.toggle("open");
+    hamburger.textContent = nav.classList.contains("open") ? "✖" : "☰";
+});
 
-if (hamburger && nav) {
-    hamburger.addEventListener("click", () => {
-        nav.classList.toggle("open");
-        
-        if (nav.classList.contains("open")) {
-            hamburger.textContent = "✖"; 
-        } else {
-            hamburger.textContent = "☰"; 
-        }
-    });
-}
+// Footer Get Current Year and Last Modified Date
+document.getElementById("current-year").textContent = new Date().getFullYear();
+document.getElementById("last-modified").textContent = document.lastModified;
