@@ -31,7 +31,7 @@ function renderArticleCards(articles) {
     const articleMarkup = articles
         .map(
             (article) => `
-                <article class="resources-card">
+                <article class="article-resources-card">
                     <div class="resource-card-content">
                         <span class="resource-category">
                             ${escapeHtml(article.category || 'General')}
