@@ -13,6 +13,10 @@
     --nav-font: "Play", sans-serif;
     --text-font: "Open Sans", sans-serif;
     --box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    --bg-white: #ffffff;
+    --primary-depth: #0f2347; 
+    --border-grey: #e2e8f0;
+    --accent-teal: #008b8b;
 }
 
 /* Base Configuration Standard Reset */
@@ -100,9 +104,13 @@ main {
 
 .nav-links {
     list-style: none;
-    margin-top: 0.75rem;
+    margin: 0.75rem 0 0;
     padding: 0;
     background-color: var(--text-main);
+}
+
+.nav-links li {
+    text-align: center;
 }
 
 .nav-links li a {
@@ -124,20 +132,6 @@ main {
     color: white; 
 }
 
-.nav-links {
-    list-style: none;
-    margin: 0.75rem 0 0;
-    padding: 0;
-}
-
-.nav-links li {
-    text-align: center;
-}
-
-.nav-links li a {
-    display: block;
-    text-align: center;
-}
 
 /* Hero Banner */
 .hero-banner {
@@ -178,7 +172,6 @@ main {
 
 .hero-text-wrapper {
     max-width: 620px;
-    color: #ffffff;
     text-align: left;
 }
 
@@ -255,7 +248,7 @@ main {
 
 .opportunity-card:hover, .article-resources-card:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    box-shadow: var(--box-shadow)
 }
 
 .opportunity-card-title, .article-resources-card-title {
