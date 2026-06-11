@@ -179,8 +179,8 @@ main {
 
 .hero-cta-btn {
     display: inline-block;
-    background-color: #ff5e7e;
-    color: #ffffff;
+    background-color: var(--card-bg);
+    color: var(--primary-color);
     text-decoration: none;
     padding: 0.9rem 2.2rem;
     border-radius: 50px;
@@ -191,7 +191,7 @@ main {
 }
 
 .hero-cta-btn:hover {
-    background-color: #e04b68;
+    background-color: var(--accent-hover);
     transform: translateY(-1px);
 }
 
