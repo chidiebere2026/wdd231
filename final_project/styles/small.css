@@ -128,7 +128,7 @@ main {
 
 .nav-links li a:hover,
 .nav-links li a.active {
-    background-color: rgba(255, 255, 255, 0.15); 
+    background-color: rgba(255, 255, 255, 0.1); 
     color: white; 
 }
 
@@ -175,7 +175,7 @@ main {
     text-align: left;
 }
 
-.hero-text-wrapper h2 {
+.hero-text-wrapper h1 {
     font-size: 2.5rem;
     font-weight: 700;
     line-height: 1.2;
@@ -399,8 +399,8 @@ main {
 }
 
 .close-btn {
-    background-color: #f52f2f;
-    color: white;
+    background-color: #cc2424;
+    color: rgb(255, 255, 255);
     border: none;
     padding: 0.6rem 1.2rem;
     border-radius: 4px;
@@ -409,7 +409,7 @@ main {
 }
 
 .close-btn:hover {
-    background-color: #c53030;
+   background-color: #cc2424;
 }
 
 .modal-actions {
@@ -422,8 +422,8 @@ main {
 
 .apply-btn {
     display: inline-block;
-    background-color: #008b8b; 
-    color: #ffffff;
+    background-color: #007373; 
+    color: rgb(255, 255, 255);
     padding: 10px 20px;
     border-radius: 4px;
     text-decoration: none;
