@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusToCareer Hub | Opportunities</title>
+    <meta name="description" content="Discover verified student internships, career resources, and tracking metrics for professional journeys in Enugu and across Nigeria.">
+    <meta name="author" content="Mary Chidiebere Asoya">
+    
+    <meta property="og:title" content="CampusToCareer Hub for Students">
+    <meta property="og:description" content="Empowering professional journeys through responsive, interactive career tracking tools.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/og-branding-preview.jpg">
+    
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css" media="(min-width: 1025px)">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Play:wght@400;700&display=swap" rel="stylesheet">
+
+<script type="module" src="scripts/main.js"></script>
+</head>
+<body>
+<header class="main-header">
+    <div class="header-container">
+        <div class="logo-brand">
+            <img src="images/logo.webp" alt="" class="logo-img">
+            <h1 class="logo">CampusToCareer Hub</h1>
+        </div>
+        
+        <button type="button" class="menu-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
+            &#9776; 
+        </button>
+        
+        <nav class="nav-bar">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="opportunities.html" class="active">Opportunities</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="main-container">
+    <section class="hero-section text-center">
+        <div class="hero-content">
+            <h2>Explore Career Opportunities</h2>
+            <p>Practical Resources and Active Placements for Students</p>
+        </div>
+    </section>
+    
+    <section class="info-content-block">
+        <h3>Active Engagement Tracks</h3>
+        <p>Our program coordinates direct application routes into modern engineering structures. Verify close dates, adjust tracking parameters within the system module, and keep your localized preferences actively updated to secure placements.</p>
+    </section>
+
+    <section class="filter-section" aria-label="Opportunity Filtering System">
+        <form id="filter-preference-form" class="filter-form">
+            <div class="filter-group">
+                <label for="filter-location">Economic Zone</label>
+                <select id="filter-location" name="location">
+                    <option value="all">All Locations</option>
+                    <option value="Abuja">Abuja</option>
+                    <option value="Lagos">Lagos</option>
+                    <option value="Enugu">Enugu</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label for="filter-category">Specialization</label>
+                <select id="filter-category" name="category">
+                    <option value="all">All Fields</option>
+                    <option value="Development">Software Development</option>
+                    <option value="Design">UI/UX Design</option>
+                    <option value="Data">Data Analysis</option>
+                </select>
+            </div>
+        </form>
+    </section>
+
+    <section class="matrix-display" aria-live="polite">
+        <div id="career-matrix" class="matrix-grid"></div>
+    </section>
+</main>
+
+
+ <footer class="main-footer">
+        <div class="footer-container">
+            <p>&copy; 2026 Mary Chidiebere Asoya | Enugu, Nigeria</p>
+            <p><a href="attributions.html" class="footer-link">Site Resource Attributions Document</a></p>
+        </div>
+    </footer>
+</body>
+</html>

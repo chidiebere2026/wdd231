@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "title": "Frontend Intern",
+    "company": "Web Design Agency",
+    "location": "Enugu, Nigeria / Hybrid",
+    "closingDate": "June 30, 2026",
+    "description": "Assist in building high-performance, responsive UI components using modern structural semantic code."
+  },
+  {
+    "id": 2,
+    "title": "UI/UX Assistant",
+    "company": "Creative Hub Ltd",
+    "location": "Remote, Global",
+    "closingDate": "July 05, 2026",
+    "description": "Collaborate on user experience flows, digital wireframing architectures, and accessibility validation procedures."
+  },
+  {
+    "id": 3,
+    "title": "Database Intern",
+    "company": "Data Systems Org",
+    "location": "Enugu Office Space",
+    "closingDate": "July 12, 2026",
+    "description": "Support database normalization, perform structural query writing, and optimize storage paradigms."
+  },
+  {
+    "id": 4,
+    "title": "Backend Web Associate",
+    "company": "NaijaTech Solutions",
+    "location": "Abuja, Nigeria",
+    "closingDate": "July 20, 2026",
+    "description": "Assist with server-side logic engineering, API routing infrastructure, and user session token management."
+  },
+  {
+    "id": 5,
+    "title": "Mobile App Engineering Trainee",
+    "company": "AppForge Systems",
+    "location": "Lagos, Nigeria / Remote",
+    "closingDate": "July 28, 2026",
+    "description": "Contribute to native cross-platform application features, view controllers, and locally cached configurations."
+  },
+  {
+    "id": 6,
+    "title": "QA Automation Specialist",
+    "company": "VerifySoft Global",
+    "location": "Hybrid (Lagos Office)",
+    "closingDate": "August 02, 2026",
+    "description": "Write automated end-to-end integration scripts and log performance metric anomalies."
+  },
+  {
+    "id": 7,
+    "title": "Cloud Architecture Intern",
+    "company": "Apex Cloud Systems",
+    "location": "Remote, Africa",
+    "closingDate": "August 10, 2026",
+    "description": "Gain insight into virtual container systems, reverse proxy configurations, and storage scale targets."
+  },
+  {
+    "id": 8,
+    "title": "Data Analytics Trainee",
+    "company": "Insight Matrix Corp",
+    "location": "Abuja, Nigeria",
+    "closingDate": "August 15, 2026",
+    "description": "Synthesize pipeline analytics, extract meaningful data arrays, and prepare weekly metric charts."
+  },
+  {
+    "id": 9,
+    "title": "Cybersecurity Associate",
+    "company": "Shield Gate Security",
+    "location": "Enugu, Nigeria",
+    "closingDate": "August 22, 2026",
+    "description": "Evaluate firewall logs, configure secure access controls, and perform access audits."
+  },
+  {
+    "id": 10,
+    "title": "DevOps Optimization Intern",
+    "company": "Pipeline Automations",
+    "location": "Remote",
+    "closingDate": "August 30, 2026",
+    "description": "Assist with Continuous Integration configurations, code compilation checks, and shell environment management."
+  },
+  {
+    "id": 11,
+    "title": "Technical Writer Intern",
+    "company": "DocuTech Publications",
+    "location": "Remote, Global",
+    "closingDate": "September 05, 2026",
+    "description": "Draft clear software API setup instructions, user operational guides, and formatting templates."
+  },
+  {
+    "id": 12,
+    "title": "Product Management Assistant",
+    "company": "Sprint Delivery Corp",
+    "location": "Lagos, Nigeria",
+    "closingDate": "September 12, 2026",
+    "description": "Coordinate weekly engineering priorities, capture feature milestones, and align project components."
+  },
+  {
+    "id": 13,
+    "title": "Full-Stack System Trainee",
+    "company": "Convergence Labs",
+    "location": "Abuja, Nigeria / Hybrid",
+    "closingDate": "September 18, 2026",
+    "description": "Design end-to-end relational data features ranging from interface elements to server records."
+  },
+  {
+    "id": 14,
+    "title": "IT Support Analyst",
+    "company": "Enterprise Infrastructure",
+    "location": "Enugu Office Space",
+    "closingDate": "September 25, 2026",
+    "description": "Troubleshoot internal workstation setups, configure server access keys, and maintain physical local loops."
+  },
+  {
+    "id": 15,
+    "title": "AI Model Engineering Trainee",
+    "company": "Neural Network Systems",
+    "location": "Remote, Global",
+    "closingDate": "September 30, 2026",
+    "description": "Analyze training token data arrays, evaluate feature weighting structures, and test application endpoints."
+  }
+]

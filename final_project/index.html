@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusToCareer Hub | Find Your Next Internship</title>
+    <meta name="description" content="Discover verified student internships, career resources, and tracking metrics for professional journeys in Enugu and across Nigeria.">
+    <meta name="author" content="Mary Chidiebere Asoya">
+    
+    <meta property="og:title" content="CampusToCareer Hub for Students">
+    <meta property="og:description" content="Empowering professional journeys through responsive, interactive career tracking tools.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/og-branding-preview.jpg">
+    
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css" media="(min-width: 1025px)">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Play:wght@400;700&display=swap" rel="stylesheet">
+
+
+    <script type="module" src="scripts/main.js"></script>
+</head>
+<body>
+<header class="main-header">
+    <div class="header-container">
+        <div class="logo-brand">
+            <img src="images/logo.webp" alt="" class="logo-img">
+            <h1 class="logo">CampusToCareer Hub</h1>
+        </div>
+        
+        <button type="button" class="menu-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
+            &#9776; 
+        </button>
+        
+        <nav class="nav-bar">
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="opportunities.html">Opportunities</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main id="home-main">
+        <section class="hero-banner">
+    <div class="hero-overlay"></div>
+    
+    <div class="hero-container-inner">
+        <div class="hero-text-wrapper">
+            <h2>Empower the Next Generation of Talent</h2>
+<p>Join our network of tech professionals and alumni to provide structured mentorship, share insights, and help students launch their careers across Nigeria's tech hubs.</p>
+            <a href="#career-matrix" class="hero-cta-btn">Active Cases</a>
+        </div>
+    </div>
+</section>
+
+        <section class="matrix-container">
+            <h3>Launch Your Career</h3>
+<p class="section-subtitle">Discover verified entry-level roles and internships matching your skill set</p>
+            <div id="career-matrix" class="grid-layout">
+                </div>
+        </section>
+
+        <section class="form-section">
+            <div class="form-wrapper">
+                <h3>Tailor Your Opportunities</h3>
+<p>Narrow down roles by track or region, and save your preferences to get notified the moment a position opens.</p>
+                
+                <form action="thankyou.html" method="get" class="client-form" id="filter-preference-form">
+                    <fieldset>
+                        <legend>Search Optimization & Verification</legend>
+                        <label for="user-name">Full Name *</label>
+                        <input type="text" id="user-name" name="userName" required autocomplete="name">
+
+                        <label for="user-email">Email Address *</label>
+                        <input type="email" id="user-email" name="userEmail" required autocomplete="email">
+
+                        <label for="preferred-location">Preferred Location Mode</label>
+                        <select id="preferred-location" name="preferredLocation">
+                            <option value="All">All Regions</option>
+                            <option value="Enugu">Enugu</option>
+                            <option value="Abuja">Abuja</option>
+                            <option value="Lagos">Lagos</option>
+                            <option value="Remote">Remote</option>
+                        </select>
+                        
+                        <label for="alert-frequency">Update Frequency Choice</label>
+                        <select id="alert-frequency" name="alertFrequency">
+                            <option value="instantly">Instantly</option>
+                            <option value="weekly">Weekly Summary</option>
+                            <option value="none">No Alerts</option>
+                        </select>
+                    </fieldset>
+                    <button type="submit" class="submit-btn">Register Preference & Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <dialog id="detail-modal" class="info-dialog">
+        <div class="dialog-content">
+            <h4 id="modal-title">Opportunity Title</h4>
+            <h5 id="modal-company">Company Context</h5>
+            <p id="modal-location" class="modal-meta">Location Info</p>
+            <p id="modal-date" class="modal-meta">Deadline Date</p>
+            <hr>
+            <p id="modal-desc">Detailed specification content elements.</p>
+            <button id="close-modal-btn" class="close-btn">Close Window</button>
+        </div>
+    </dialog>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <p>&copy; 2026 Mary Chidiebere Asoya | Enugu, Nigeria</p>
+            <p><a href="attributions.html" class="footer-link">Site Resource Attributions Document</a></p>
+        </div>
+    </footer>
+</body>
+</html>

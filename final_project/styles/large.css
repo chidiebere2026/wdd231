@@ -1,0 +1,177 @@
+/* ==========================================================================
+   WIDESCREEN RESPONSIVE OVERRIDES (Viewports 768px and up)
+   ========================================================================== */
+@media (min-width: 768px) {
+    /* 1. Navigation Overrides - Aligns brand left and links right horizontally */
+    .header-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo-brand {
+        margin-bottom: 0;    
+        justify-content: flex-start; 
+    }
+
+    .logo {
+        text-align: left;
+    }
+
+    .logo-img {
+    height: 70px;            
+    width: auto;             
+    object-fit: contain;
+}
+
+    
+    .menu-toggle {
+        display: none !important;
+    }
+
+    
+    .nav-bar {
+        display: block !important;
+        width: auto;
+    }
+
+    
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        gap: 1.5rem;
+        margin-top: 0;
+    }
+
+    .nav-links li a {
+        display: inline-block;
+        padding: 0.5rem;
+        border: none;
+    }
+
+  .nav-links li a:hover,
+.nav-links li a.active {
+     background-color: rgba(255, 255, 255, 0.15); 
+    color: white; 
+}
+
+    .grid-layout {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .footer-container {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 0;
+    }
+
+     .matrix-container, .form-section, .info-content-block {
+        margin: 2rem auto;
+        max-width: var(--max-content);
+    }
+
+    .grid-layout {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .form-section {
+    max-width: var(--max-content);
+    margin: 1.25rem auto;
+}
+
+
+/* Textarea normalization rules */
+.client-form textarea {
+    width: 100%;
+    padding: 0.65rem;
+    margin-top: 0.25rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 0.95rem;
+    font-family: inherit;
+    resize: vertical;
+}
+
+/* Sidebar Callout Layout rules */
+.values-callout {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background-color: var(--bg-light);
+    border-left: 4px solid var(--accent-color);
+    border-radius: 0 4px 4px 0;
+}
+
+.values-callout h4 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.values-callout ul {
+    list-style-position: inside;
+    padding-left: 0.5rem;
+}
+
+.values-callout li {
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+.hero-section {
+        padding: 4.5rem 2.5rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .hero-content h2 {
+        font-size: 2.25rem;
+    }
+
+    .hero-content p {
+        font-size: 1.25rem;
+    }
+
+    .info-content-block {
+        padding: 3rem;
+    }
+
+    .info-content-block h3 {
+        font-size: 1.75rem;
+    }
+
+    .values-callout {
+        padding: 2rem;
+    }
+
+    .filter-form {
+        flex-direction: row;       
+        justify-content: center;   
+        align-items: flex-end;     
+        gap: 2rem;
+    }
+
+    .filter-group {
+        width: 260px; 
+    }
+
+    .matrix-grid {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 2rem;
+    
+    }
+
+    .community-story-section {
+        padding: 6rem 2rem;
+    }
+
+    .story-split-wrapper {
+        flex-direction: row; 
+        gap: 4.5rem; 
+    }
+
+    .story-image-column,
+    .story-text-column {
+        flex: 1; 
+    }
+  
+
+}
+

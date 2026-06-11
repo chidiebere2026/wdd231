@@ -1,0 +1,137 @@
+[
+  {
+    "id": "art-001",
+    "title": "Mastering Your Frontend Internship in Lagos",
+    "category": "Frontend Development",
+    "excerpt": "Navigating your first tech placement in Nigeria's largest economic hub. Learn how to transition from code concepts to real enterprise codebases.",
+    "readTime": "5 min read",
+    "publishDate": "June 10, 2026",
+    "tags": ["Lagos", "Frontend", "Internships"]
+  },
+  {
+    "id": "art-002",
+    "title": "How to Build a Standout Portfolio for Abuja Tech Roles",
+    "category": "Career Strategy",
+    "excerpt": "Local tech founders in Abuja share what they actually look for in student Git repositories beyond basic class assignments.",
+    "readTime": "7 min read",
+    "publishDate": "June 08, 2026",
+    "tags": ["Abuja", "Portfolio", "Hiring"]
+  },
+  {
+    "id": "art-003",
+    "title": "UI/UX Design Trends in the African Tech Ecosystem",
+    "category": "UI/UX Design",
+    "excerpt": "A deep dive into mobile-first user interfaces optimized for low bandwidth networks and localized user experiences.",
+    "readTime": "6 min read",
+    "publishDate": "June 04, 2026",
+    "tags": ["UI/UX", "Design Systems", "Mobile"]
+  },
+  {
+    "id": "art-004",
+    "title": "Navigating Remote Tech Placements from Enugu",
+    "category": "Remote Work",
+    "excerpt": "Strategies for balancing poor power grids, setting up dedicated data pipelines, and managing synchronous work with global design teams.",
+    "readTime": "8 min read",
+    "publishDate": "May 28, 2026",
+    "tags": ["Enugu", "Remote", "Infrastructure"]
+  },
+  {
+    "id": "art-005",
+    "title": "The Ultimate Guide to Technical Interviews",
+    "category": "Interview Prep",
+    "excerpt": "Demystifying runtime tracking, technical whiteboard assignments, and data logic questions for entry-level engineering applicants.",
+    "readTime": "10 min read",
+    "publishDate": "May 25, 2026",
+    "tags": ["Interviews", "Data Structures", "Algorithms"]
+  },
+  {
+    "id": "art-006",
+    "title": "Crafting a Tech Resume with Zero Industry Experience",
+    "category": "Career Strategy",
+    "excerpt": "How to convert academic capstone projects, open-source pull requests, and bootcamp exercises into valuable workspace metrics.",
+    "readTime": "4 min read",
+    "publishDate": "May 22, 2026",
+    "tags": ["Resume", "Applications", "Students"]
+  },
+  {
+    "id": "art-007",
+    "title": "5 Soft Skills Every Junior Developer Needs",
+    "category": "Professional Growth",
+    "excerpt": "Technical proficiency gets you an interview, but synchronous tracking updates, clean documentation, and code empathy win the placement.",
+    "readTime": "5 min read",
+    "publishDate": "May 19, 2026",
+    "tags": ["Communication", "Teamwork", "Mentorship"]
+  },
+  {
+    "id": "art-008",
+    "title": "Introduction to Semantic Version Control with Git",
+    "category": "Technical",
+    "excerpt": "A visual walk-through of merge conflict remediation paths, feature branching models, and clean push habits for group pipelines.",
+    "readTime": "6 min read",
+    "publishDate": "May 15, 2026",
+    "tags": ["Git", "Version Control", "Workflow"]
+  },
+  {
+    "id": "art-009",
+    "title": "Understanding the Cloud Infrastructure Ecosystem",
+    "category": "Backend Development",
+    "excerpt": "Breaking down deployment architectures, serverless routines, and managed API configurations for modern application clusters.",
+    "readTime": "9 min read",
+    "publishDate": "May 11, 2026",
+    "tags": ["Backend", "Cloud", "DevOps"]
+  },
+  {
+    "id": "art-010",
+    "title": "Balancing Academic Milestones and Internship Demands",
+    "category": "Student Life",
+    "excerpt": "Time management frameworks for student developers juggling database schema assignments alongside active enterprise production sprints.",
+    "readTime": "5 min read",
+    "publishDate": "May 08, 2026",
+    "tags": ["Time Management", "Education", "Balance"]
+  },
+  {
+    "id": "art-011",
+    "title": "Backend Development: Where to Start in 2026",
+    "category": "Backend Development",
+    "excerpt": "Why relational database normalization models and reliable authorization handling remain the foundation of enterprise systems.",
+    "readTime": "7 min read",
+    "publishDate": "May 04, 2026",
+    "tags": ["Backend", "SQL", "Security"]
+  },
+  {
+    "id": "art-012",
+    "title": "Networking 101: Connecting with Tech Communities",
+    "category": "Career Strategy",
+    "excerpt": "How to approach tech meetups across major Nigerian hubs to find mentors without feeling awkward or sales-driven.",
+    "readTime": "5 min read",
+    "publishDate": "April 30, 2026",
+    "tags": ["Networking", "Community", "Lagos"]
+  },
+  {
+    "id": "art-013",
+    "title": "Ace Your Next Live Coding Challenge",
+    "category": "Interview Prep",
+    "excerpt": "Tips from engineering leads on how speaking out loud during algorithmic problem-solving matters more than a flawless execution on your first run.",
+    "readTime": "6 min read",
+    "publishDate": "April 26, 2026",
+    "tags": ["Interviews", "Coding", "Problem Solving"]
+  },
+  {
+    "id": "art-014",
+    "title": "The Rise of Hybrid Work in Nigeria's Tech Sector",
+    "category": "Remote Work",
+    "excerpt": "An analysis of current workspace hybrid policies across hub agencies and how to maximize in-office days for networking.",
+    "readTime": "5 min read",
+    "publishDate": "April 22, 2026",
+    "tags": ["Hybrid Work", "Workplace Culture", "Trends"]
+  },
+  {
+    "id": "art-015",
+    "title": "Setting Up Your Development Workspace on a Budget",
+    "category": "Technical",
+    "excerpt": "Optimizing local environments, low-memory terminal alternatives, and background processes to extend performance on standard machines.",
+    "readTime": "6 min read",
+    "publishDate": "April 15, 2026",
+    "tags": ["Hardware", "Productivity", "Setup"]
+  }
+]
