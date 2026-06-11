@@ -5,8 +5,9 @@
     "category": "Frontend Development",
     "excerpt": "Navigating your first tech placement in Nigeria's largest economic hub. Learn how to transition from code concepts to real enterprise codebases.",
     "readTime": "5 min read",
-    "publishDate": "June 10, 2026",
-    "tags": ["Lagos", "Frontend", "Internships"]
+    "publishDate": "Active Training Program",
+    "tags": ["Lagos", "Frontend", "Internships"],
+    "url": "https://techpoint.com.ng/internship-programme/"
   },
   {
     "id": "art-002",
@@ -14,8 +15,9 @@
     "category": "Career Strategy",
     "excerpt": "Local tech founders in Abuja share what they actually look for in student Git repositories beyond basic class assignments.",
     "readTime": "7 min read",
-    "publishDate": "June 08, 2026",
-    "tags": ["Abuja", "Portfolio", "Hiring"]
+    "publishDate": "April 18, 2026",
+    "tags": ["Abuja", "Portfolio", "Hiring"],
+    "url": "https://www.freecodecamp.org/news/how-to-make-your-github-profile-stand-out/"
   },
   {
     "id": "art-003",
@@ -23,8 +25,9 @@
     "category": "UI/UX Design",
     "excerpt": "A deep dive into mobile-first user interfaces optimized for low bandwidth networks and localized user experiences.",
     "readTime": "6 min read",
-    "publishDate": "June 04, 2026",
-    "tags": ["UI/UX", "Design Systems", "Mobile"]
+    "publishDate": "April 14, 2026",
+    "tags": ["UI/UX", "Design Systems", "Mobile"],
+    "url": "https://xelorra.com/blog/2776804b-805c-4752-b486-66cf479d3471"
   },
   {
     "id": "art-004",
@@ -32,8 +35,9 @@
     "category": "Remote Work",
     "excerpt": "Strategies for balancing poor power grids, setting up dedicated data pipelines, and managing synchronous work with global design teams.",
     "readTime": "8 min read",
-    "publishDate": "May 28, 2026",
-    "tags": ["Enugu", "Remote", "Infrastructure"]
+    "publishDate": "March 13, 2026",
+    "tags": ["Enugu", "Remote", "Infrastructure"],
+    "url": "https://techpoint.africa/insight/nigerias-remote-workers-suffer-power-shortage/"
   },
   {
     "id": "art-005",
@@ -41,8 +45,9 @@
     "category": "Interview Prep",
     "excerpt": "Demystifying runtime tracking, technical whiteboard assignments, and data logic questions for entry-level engineering applicants.",
     "readTime": "10 min read",
-    "publishDate": "May 25, 2026",
-    "tags": ["Interviews", "Data Structures", "Algorithms"]
+    "publishDate": "Interactive Curriculum Track",
+    "tags": ["Interviews", "Data Structures", "Algorithms"],
+    "url": "https://www.freecodecamp.org/learn/coding-interview-prep"
   },
   {
     "id": "art-006",
@@ -50,8 +55,9 @@
     "category": "Career Strategy",
     "excerpt": "How to convert academic capstone projects, open-source pull requests, and bootcamp exercises into valuable workspace metrics.",
     "readTime": "4 min read",
-    "publishDate": "May 22, 2026",
-    "tags": ["Resume", "Applications", "Students"]
+    "publishDate": "May 11, 2021",
+    "tags": ["Resume", "Applications", "Students"],
+    "url": "https://www.freecodecamp.org/news/how-to-write-a-resume-with-example/"
   },
   {
     "id": "art-007",
@@ -59,8 +65,9 @@
     "category": "Professional Growth",
     "excerpt": "Technical proficiency gets you an interview, but synchronous tracking updates, clean documentation, and code empathy win the placement.",
     "readTime": "5 min read",
-    "publishDate": "May 19, 2026",
-    "tags": ["Communication", "Teamwork", "Mentorship"]
+    "publishDate": "Live Topic Index",
+    "tags": ["Communication", "Teamwork", "Mentorship"],
+    "url": "https://www.freecodecamp.org/news/tag/soft-skill/"
   },
   {
     "id": "art-008",
@@ -68,8 +75,9 @@
     "category": "Technical",
     "excerpt": "A visual walk-through of merge conflict remediation paths, feature branching models, and clean push habits for group pipelines.",
     "readTime": "6 min read",
-    "publishDate": "May 15, 2026",
-    "tags": ["Git", "Version Control", "Workflow"]
+    "publishDate": "Evergreen Documentation",
+    "tags": ["Git", "Version Control", "Workflow"],
+    "url": "https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow"
   },
   {
     "id": "art-009",
@@ -77,8 +85,9 @@
     "category": "Backend Development",
     "excerpt": "Breaking down deployment architectures, serverless routines, and managed API configurations for modern application clusters.",
     "readTime": "9 min read",
-    "publishDate": "May 11, 2026",
-    "tags": ["Backend", "Cloud", "DevOps"]
+    "publishDate": "Interactive Platform Hub",
+    "tags": ["Backend", "Cloud", "DevOps"],
+    "url": "https://roadmap.sh/"
   },
   {
     "id": "art-010",
@@ -86,8 +95,9 @@
     "category": "Student Life",
     "excerpt": "Time management frameworks for student developers juggling database schema assignments alongside active enterprise production sprints.",
     "readTime": "5 min read",
-    "publishDate": "May 08, 2026",
-    "tags": ["Time Management", "Education", "Balance"]
+    "publishDate": "May 16, 2022",
+    "tags": ["Time Management", "Education", "Balance"],
+    "url": "https://www.freecodecamp.org/news/entry-level-tech-job-guide/"
   },
   {
     "id": "art-011",
@@ -95,8 +105,9 @@
     "category": "Backend Development",
     "excerpt": "Why relational database normalization models and reliable authorization handling remain the foundation of enterprise systems.",
     "readTime": "7 min read",
-    "publishDate": "May 04, 2026",
-    "tags": ["Backend", "SQL", "Security"]
+    "publishDate": "Evergreen Platform Module",
+    "tags": ["Backend", "SQL", "Security"],
+    "url": "https://roadmap.sh/backend-beginner"
   },
   {
     "id": "art-012",
@@ -104,8 +115,9 @@
     "category": "Career Strategy",
     "excerpt": "How to approach tech meetups across major Nigerian hubs to find mentors without feeling awkward or sales-driven.",
     "readTime": "5 min read",
-    "publishDate": "April 30, 2026",
-    "tags": ["Networking", "Community", "Lagos"]
+    "publishDate": "Live Community Directory",
+    "tags": ["Networking", "Community", "Lagos"],
+    "url": "https://www.meetup.com/find/ng--lagos/networking/"
   },
   {
     "id": "art-013",
@@ -113,8 +125,9 @@
     "category": "Interview Prep",
     "excerpt": "Tips from engineering leads on how speaking out loud during algorithmic problem-solving matters more than a flawless execution on your first run.",
     "readTime": "6 min read",
-    "publishDate": "April 26, 2026",
-    "tags": ["Interviews", "Coding", "Problem Solving"]
+    "publishDate": "Live Challenge Index",
+    "tags": ["Interviews", "Coding", "Problem Solving"],
+    "url": "https://www.freecodecamp.org/news/tag/coding-challenge/"
   },
   {
     "id": "art-014",
@@ -122,8 +135,9 @@
     "category": "Remote Work",
     "excerpt": "An analysis of current workspace hybrid policies across hub agencies and how to maximize in-office days for networking.",
     "readTime": "5 min read",
-    "publishDate": "April 22, 2026",
-    "tags": ["Hybrid Work", "Workplace Culture", "Trends"]
+    "publishDate": "January 19, 2026",
+    "tags": ["Hybrid Work", "Workplace Culture", "Trends"],
+    "url": "https://initiativefordigitalinclusion.org/remote-work-in-nigeria-unlocking-opportunities-for-inclusive-growth/"
   },
   {
     "id": "art-015",
@@ -131,7 +145,8 @@
     "category": "Technical",
     "excerpt": "Optimizing local environments, low-memory terminal alternatives, and background processes to extend performance on standard machines.",
     "readTime": "6 min read",
-    "publishDate": "April 15, 2026",
-    "tags": ["Hardware", "Productivity", "Setup"]
+    "publishDate": "June 06, 2026",
+    "tags": ["Hardware", "Productivity", "Setup"],
+    "url": "https://www.lenovo.com/us/en/knowledgebase/how-to-evaluate-the-best-budget-laptop-for-programming-needs/"
   }
 ]

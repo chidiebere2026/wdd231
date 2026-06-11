@@ -18,7 +18,16 @@ function initializeNavigationToggler() {
     if (toggleButton && linksWrapper) {
         toggleButton.addEventListener('click', () => {
             const isCurrentlyExpanded = linksWrapper.classList.toggle('active');
-            toggleButton.setAttribute('aria-expanded', isCurrentlyExpanded.toString());
+
+            toggleButton.setAttribute(
+                'aria-expanded',
+                isCurrentlyExpanded.toString()
+            );
+
+            // Change hamburger to X and back
+            toggleButton.innerHTML = isCurrentlyExpanded
+                ? '&times;'
+                : '&#9776;';
         });
     }
 }

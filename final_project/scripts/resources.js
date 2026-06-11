@@ -49,13 +49,15 @@ function renderArticleCards(articles) {
                         </p>
                     </div>
 
-                    <button
-                        type="button"
+                    <a
+                        href="${article.url || '#'}"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         class="view-details-btn"
-                        data-id="${article.id || ''}"
+                        style="text-decoration: none; display: inline-block; text-align: center;"
                     >
                         Read Article
-                    </button>
+                    </a>
                 </article>
             `
         )

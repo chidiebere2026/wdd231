@@ -26,12 +26,12 @@
 
     
     .menu-toggle {
-        display: none !important;
+        display: none;
     }
 
     
     .nav-bar {
-        display: block !important;
+        display: block;
         width: auto;
     }
 
@@ -41,6 +41,7 @@
         flex-direction: row;
         gap: 1.5rem;
         margin-top: 0;
+        background: none;
     }
 
     .nav-links li a {
@@ -172,6 +173,22 @@
         flex: 1; 
     }
   
+    
 
 }
 
+@media (max-width: 600px) {
+    .attributions-container {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+
+    .attributions-header h1 {
+        font-size: 1.85rem;
+    }
+
+    .resource-grid {
+        grid-template-columns: 1fr; 
+        gap: 1.25rem;
+    }
+}

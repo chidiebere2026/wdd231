@@ -6,7 +6,8 @@ import { fetchOpportunityData } from '../modules/dataService.js';
 export async function initializeApplicationEngine() {
     const matrixGrid = document.querySelector('#career-matrix');
     const preferenceForm = document.querySelector('#filter-preference-form');
-    const detailModal = document.querySelector('#details-modal');
+    const detailModal = document.querySelector('#detail-modal');
+    const contactForm = document.querySelector('#contact-hub-form');
 
     // Career Matrix Page
     if (matrixGrid) {
@@ -18,8 +19,16 @@ export async function initializeApplicationEngine() {
             renderMatrixCards(structuralDataArray, matrixGrid);
 
             if (preferenceForm) {
-                loadPersistedFormPreferences();
-                setupFormStorageTracking(preferenceForm);
+                // Check if this form contains the filter dropdown elements
+                const isFilterForm = document.querySelector('#filter-location') || document.querySelector('#filter-category');
+                
+                if (isFilterForm) {
+                    setupLiveFilteringSystem(preferenceForm, structuralDataArray, matrixGrid);
+                } else {
+                    // Fallback to profile persistence if it is the subscription form variant
+                    loadPersistedFormPreferences();
+                    setupFormStorageTracking(preferenceForm);
+                }
             }
 
             setupModalInterfaceTriggers(
@@ -38,7 +47,14 @@ export async function initializeApplicationEngine() {
         }
     }
 
-    // Confirmation Page
+    // Contact Page Form Handler
+    if (contactForm) {
+        contactForm.addEventListener('submit', () => {
+            console.log('Contact form validation verified. Transferring to completion page.');
+        });
+    }
+
+    // Confirmation Page 
     if (document.querySelector('#summary-data-display')) {
         extractAndRenderConfirmationSummary();
     }
@@ -50,8 +66,8 @@ export async function initializeApplicationEngine() {
 function renderMatrixCards(itemsArray, structuralContainer) {
     if (!Array.isArray(itemsArray) || itemsArray.length === 0) {
         structuralContainer.innerHTML = `
-            <p class="fallback-err">
-                No opportunities available at this time.
+            <p class="fallback-err" style="grid-column: 1 / -1; text-align: center; padding: 2rem;">
+                No opportunities match your current filter selections.
             </p>
         `;
         return;
@@ -89,6 +105,53 @@ function renderMatrixCards(itemsArray, structuralContainer) {
 }
 
 /**
+ * Monitors selection modifications and updates the matrix layout live.
+ * Handles partial and compound string normalization.
+ */
+function setupLiveFilteringSystem(formElement, fullDataset, displayContainer) {
+    const locationDropdown = document.querySelector('#filter-location');
+    const categoryDropdown = document.querySelector('#filter-category');
+
+    if (!locationDropdown || !categoryDropdown) {
+        console.warn('Filtering dropdown elements could not be located in the DOM.');
+        return;
+    }
+
+    const executeFilterPipeline = () => {
+        // Grab values, normalize to lowercase, and trim white spaces
+        const targetLocation = locationDropdown.value.toLowerCase().trim();
+        const targetCategory = categoryDropdown.value.toLowerCase().trim();
+
+        console.log(`Filter active -> Location: "${targetLocation}", Category: "${targetCategory}"`);
+
+        const filteredCollection = fullDataset.filter((opportunity) => {
+            const itemLocation = (opportunity.location || '').toLowerCase().trim();
+            const itemCategory = (opportunity.category || '').toLowerCase().trim();
+
+            // Flexible substring matching instead of strict equality (===)
+            const locationMatch = 
+                targetLocation === 'all' || 
+                itemLocation.includes(targetLocation);
+
+            const categoryMatch = 
+                targetCategory === 'all' || 
+                itemCategory.includes(targetCategory);
+
+            return locationMatch && categoryMatch;
+        });
+
+        console.log(`Matches isolated: ${filteredCollection.length} out of ${fullDataset.length}`);
+
+        // Repopulate cards safely inside the view layout container
+        renderMatrixCards(filteredCollection, displayContainer);
+    };
+
+    // Attach native active change listeners
+    locationDropdown.addEventListener('change', executeFilterPipeline);
+    categoryDropdown.addEventListener('change', executeFilterPipeline);
+}
+
+/**
  * Handles modal interactions for viewing opportunity details.
  */
 function setupModalInterfaceTriggers(
@@ -96,8 +159,7 @@ function setupModalInterfaceTriggers(
     modalWrapper,
     dataArray
 ) {
-    const closeModalButton =
-        document.querySelector('#close-modal-btn');
+    const closeModalButton = document.querySelector('#close-modal-btn');
 
     if (!gridReference || !modalWrapper || !closeModalButton) {
         return;
@@ -120,23 +182,35 @@ function setupModalInterfaceTriggers(
             return;
         }
 
-        const modalTitle =
-            document.querySelector('#modal-title');
-
-        const modalDescription =
-            document.querySelector('#modal-desc');
+        const modalTitle = document.querySelector('#modal-title');
+        const modalCompany = document.querySelector('#modal-company');
+        const modalLocation = document.querySelector('#modal-location');
+        const modalDate = document.querySelector('#modal-date');
+        const modalDescription = document.querySelector('#modal-desc');
+        const modalApplyBtn = document.querySelector('#modal-apply-btn');
 
         if (modalTitle) {
-            modalTitle.textContent =
-                focusedItem.title ||
-                focusedItem.role ||
-                'Opportunity Details';
+            modalTitle.textContent = focusedItem.title || focusedItem.role || 'Opportunity Details';
+        }
+
+        if (modalCompany) {
+            modalCompany.textContent = focusedItem.company || 'Organization Context';
+        }
+
+        if (modalLocation) {
+            modalLocation.textContent = focusedItem.location || 'Remote';
+        }
+
+        if (modalDate) {
+            modalDate.textContent = focusedItem.closingDate || 'N/A';
         }
 
         if (modalDescription) {
-            modalDescription.textContent =
-                focusedItem.description ||
-                'No description available.';
+            modalDescription.textContent = focusedItem.description || 'No description available.';
+        }
+
+        if (modalApplyBtn) {
+            modalApplyBtn.href = `apply/index.html?jobId=${focusedItem.id}`;
         }
 
         if (typeof modalWrapper.showModal === 'function') {
@@ -163,23 +237,12 @@ function setupFormStorageTracking(formReference) {
         return;
     }
 
-    formReference.addEventListener('submit', (event) => {
-        event.preventDefault();
-
+    formReference.addEventListener('submit', () => {
         const clientPreferencesObj = {
-            savedName:
-                document.querySelector('#user-name')?.value || '',
-
-            savedEmail:
-                document.querySelector('#user-email')?.value || '',
-
-            savedLocation:
-                document.querySelector('#preferred-location')
-                    ?.value || 'All',
-
-            savedFrequency:
-                document.querySelector('#alert-frequency')
-                    ?.value || 'instantly'
+            savedName: document.querySelector('#user-name')?.value || '',
+            savedEmail: document.querySelector('#user-email')?.value || '',
+            savedLocation: document.querySelector('#preferred-location')?.value || 'All',
+            savedFrequency: document.querySelector('#alert-frequency')?.value || 'instantly'
         };
 
         localStorage.setItem(
@@ -187,7 +250,7 @@ function setupFormStorageTracking(formReference) {
             JSON.stringify(clientPreferencesObj)
         );
 
-        console.log('Preferences saved.');
+        console.log('Preferences saved. Redirecting...');
     });
 }
 
@@ -195,112 +258,109 @@ function setupFormStorageTracking(formReference) {
  * Loads saved preferences from localStorage.
  */
 function loadPersistedFormPreferences() {
-    const storedDataString = localStorage.getItem(
-        'hubClientPreferences'
-    );
+    const storedDataString = localStorage.getItem('hubClientPreferences');
 
     if (!storedDataString) {
         return;
     }
 
     try {
-        const parsedPreferences = JSON.parse(
-            storedDataString
-        );
+        const parsedPreferences = JSON.parse(storedDataString);
 
-        const nameEl =
-            document.querySelector('#user-name');
-
-        const emailEl =
-            document.querySelector('#user-email');
-
-        const locationEl =
-            document.querySelector('#preferred-location');
-
-        const frequencyEl =
-            document.querySelector('#alert-frequency');
+        const nameEl = document.querySelector('#user-name');
+        const emailEl = document.querySelector('#user-email');
+        const locationEl = document.querySelector('#preferred-location');
+        const frequencyEl = document.querySelector('#alert-frequency');
 
         if (nameEl) {
-            nameEl.value =
-                parsedPreferences.savedName || '';
+            nameEl.value = parsedPreferences.savedName || '';
         }
 
         if (emailEl) {
-            emailEl.value =
-                parsedPreferences.savedEmail || '';
+            emailEl.value = parsedPreferences.savedEmail || '';
         }
 
         if (locationEl) {
-            locationEl.value =
-                parsedPreferences.savedLocation || 'All';
+            locationEl.value = parsedPreferences.savedLocation || 'All';
         }
 
         if (frequencyEl) {
-            frequencyEl.value =
-                parsedPreferences.savedFrequency ||
-                'instantly';
+            frequencyEl.value = parsedPreferences.savedFrequency || 'instantly';
         }
     } catch (error) {
-        console.error(
-            'Failed to load saved preferences:',
-            error
-        );
-
-        localStorage.removeItem(
-            'hubClientPreferences'
-        );
+        console.error('Failed to load saved preferences:', error);
+        localStorage.removeItem('hubClientPreferences');
     }
 }
 
 /**
- * Displays confirmation information from URL parameters.
+ * Displays confirmation information from URL parameters dynamically based on form type.
  */
 function extractAndRenderConfirmationSummary() {
-    const summaryTarget = document.querySelector(
-        '#summary-data-display'
-    );
+    const summaryTarget = document.querySelector('#summary-data-display');
 
     if (!summaryTarget) {
         return;
     }
 
-    const urlParameters = new URLSearchParams(
-        window.location.search
-    );
+    const urlParameters = new URLSearchParams(window.location.search);
 
-    const userName =
-        urlParameters.get('userName') || 'User';
+    const userName = urlParameters.get('userName') || 'User';
+    const userEmail = urlParameters.get('userEmail') || 'N/A';
 
-    const userEmail =
-        urlParameters.get('userEmail') || 'N/A';
+    if (urlParameters.has('contactMessage')) {
+        const inquiryType = urlParameters.get('preferredLocation') || 'General Support';
+        const clientMessage = urlParameters.get('contactMessage') || '';
 
-    const preferredLocation =
-        urlParameters.get('preferredLocation') || 'All';
+        summaryTarget.innerHTML = `
+            <p>
+                <strong>Sender Name:</strong>
+                ${escapeHtml(userName)}
+            </p>
 
-    const alertFrequency =
-        urlParameters.get('alertFrequency') || 'instantly';
+            <p>
+                <strong>Email Address:</strong>
+                ${escapeHtml(userEmail)}
+            </p>
 
-    summaryTarget.innerHTML = `
-        <p>
-            <strong>Registrant:</strong>
-            ${escapeHtml(userName)}
-        </p>
+            <p>
+                <strong>Inquiry Classification:</strong>
+                ${escapeHtml(inquiryType)}
+            </p>
 
-        <p>
-            <strong>Destination Delivery:</strong>
-            ${escapeHtml(userEmail)}
-        </p>
+            <p style="margin-top: 1.5rem; font-weight: bold; color: #1a365d;">
+                Submitted Message Context:
+            </p>
+            <blockquote style="background: #f7fafc; padding: 1rem; border-left: 4px solid #008b8b; margin: 0.5rem 0; font-style: italic; color: #4a5568; border-radius: 0 4px 4px 0;">
+                "${escapeHtml(clientMessage)}"
+            </blockquote>
+        `;
+    } else {
+        const preferredLocation = urlParameters.get('preferredLocation') || 'All';
+        const alertFrequency = urlParameters.get('alertFrequency') || 'instantly';
 
-        <p>
-            <strong>Configured Region Scope:</strong>
-            ${escapeHtml(preferredLocation)}
-        </p>
+        summaryTarget.innerHTML = `
+            <p>
+                <strong>Registrant:</strong>
+                ${escapeHtml(userName)}
+            </p>
 
-        <p>
-            <strong>Alert Sync Cadence:</strong>
-            ${escapeHtml(alertFrequency)}
-        </p>
-    `;
+            <p>
+                <strong>Destination Delivery:</strong>
+                ${escapeHtml(userEmail)}
+            </p>
+
+            <p>
+                <strong>Configured Region Scope:</strong>
+                ${escapeHtml(preferredLocation)}
+            </p>
+
+            <p>
+                <strong>Alert Sync Cadence:</strong>
+                ${escapeHtml(alertFrequency)}
+            </p>
+        `;
+    }
 }
 
 /**

@@ -118,5 +118,140 @@
     "location": "Remote, Global",
     "closingDate": "September 30, 2026",
     "description": "Analyze training token data arrays, evaluate feature weighting structures, and test application endpoints."
+  },
+  {
+    "id": "opp-016",
+    "title": "Junior Frontend Engineer",
+    "category": "Software Development",
+    "company": "Spark Digital Solutions",
+    "location": "Lagos",
+    "closingDate": "July 15, 2026",
+    "description": "Collaborate with senior engineering workflows to transition high-fidelity wireframes into performance-optimized browser elements using clean HTML, semantic modern CSS, and vanilla modules."
+  },
+  {
+    "id": "opp-017",
+    "title": "Associate Product Designer",
+    "category": "UI/UX Design",
+    "company": "Nexus Hub Logistics",
+    "location": "Abuja",
+    "closingDate": "June 30, 2026",
+    "description": "Construct accessible, component-driven user flows, wireframes, and design system modules focused on enhancing transaction speeds for mobile-first logistical platforms across West Africa."
+  },
+  {
+    "id": "opp-018",
+    "title": "Junior Data Analyst",
+    "category": "Data Analysis",
+    "company": "Vanguard FinTech Group",
+    "location": "Enugu",
+    "closingDate": "July 05, 2026",
+    "description": "Ingest regional payment pipelines data, query structured tables via relational database setups, and construct clear visual performance reports to identify workflow bottlenecks."
+  },
+  {
+    "id": "opp-019",
+    "title": "Full-Stack Web Developer",
+    "category": "Web Development",
+    "company": "Apex Media Agency",
+    "location": "Remote",
+    "closingDate": "July 22, 2026",
+    "description": "Design, configure, and maintain customized full-stack applications, utilizing structured server environments and responsive multi-view pages for high-traffic media portals."
+  },
+  {
+    "id": "opp-020",
+    "title": "Backend Systems Intern",
+    "category": "Software Development",
+    "company": "CoreGrid Systems",
+    "location": "Abuja",
+    "closingDate": "July 12, 2026",
+    "description": "Assist in the architectural development of scalable server routes, integrate relational storage schemas, and verify endpoint processing behaviors using robust unit testing layers."
+  },
+  {
+    "id": "opp-021",
+    "title": "UX Research Associate",
+    "category": "UI/UX Design",
+    "company": "Zeta User Labs",
+    "location": "Lagos",
+    "closingDate": "August 01, 2026",
+    "description": "Conduct foundational usability assessments, direct user-centered feedback groups, and convert empirical research notes into scannable structural interface modifications."
+  },
+  {
+    "id": "opp-022",
+    "title": "Business Intelligence Analyst",
+    "category": "Data Analysis",
+    "company": "Sahara Retail Networks",
+    "location": "Remote",
+    "closingDate": "July 18, 2026",
+    "description": "Perform cross-functional tracking across user inventory databases, identify regional supply-chain patterns, and package predictive models into automated business dashboards."
+  },
+  {
+    "id": "opp-023",
+    "title": "Junior WordPress/Web Developer",
+    "category": "Web Development",
+    "company": "Coal City Creative Agency",
+    "location": "Enugu",
+    "closingDate": "July 09, 2026",
+    "description": "Translate custom aesthetic design frames into highly stable custom configurations, maximizing code efficiency and asset sizes for lightweight network requirements."
+  },
+  {
+    "id": "opp-024",
+    "title": "Mobile App Developer (Flutter/React Native)",
+    "category": "Software Development",
+    "company": "Veritas HealthTech",
+    "location": "Remote",
+    "closingDate": "July 28, 2026",
+    "description": "Contribute clean feature builds to cross-platform healthcare applications, focusing on seamless local state synchronization routines and low-footprint assets."
+  },
+  {
+    "id": "opp-025",
+    "title": "UI Visual Designer",
+    "category": "UI/UX Design",
+    "company": "Econet Digital Hub",
+    "location": "Enugu",
+    "closingDate": "August 10, 2026",
+    "description": "Curate visual assets, design micro-interactions, establish color patterns, and build reusable interactive components to maintain consistency across software layout screens."
+  },
+  {
+    "id": "opp-026",
+    "title": "Data Processing & Verification Specialist",
+    "category": "Data Analysis",
+    "company": "Capital Trust Microfinance",
+    "location": "Lagos",
+    "closingDate": "July 03, 2026",
+    "description": "Audit client application profiles, sanitize unstructured data points for entry records, and run diagnostic accuracy routines to preserve platform integrity constraints."
+  },
+  {
+    "id": "opp-027",
+    "title": "E-Commerce Web Engineer",
+    "category": "Web Development",
+    "company": "NairaCart Commerce",
+    "location": "Abuja",
+    "closingDate": "July 20, 2026",
+    "description": "Implement robust cart state pipelines, link payment gateway endpoints, and optimize product rendering patterns to ensure fluid experiences on mobile browsers."
+  },
+  {
+    "id": "opp-028",
+    "title": "Python Software Developer",
+    "category": "Software Development",
+    "company": "Savannah AgriTech Platforms",
+    "location": "Enugu",
+    "closingDate": "August 05, 2026",
+    "description": "Architect background file automation routines, implement structural data translation modules, and run verification loops to process agricultural metrics."
+  },
+  {
+    "id": "opp-029",
+    "title": "Interaction Designer",
+    "category": "UI/UX Design",
+    "company": "Kwara Ventures Studio",
+    "location": "Remote",
+    "closingDate": "July 31, 2026",
+    "description": "Build dynamic application wireframes, define animation constraints, and outline navigation structures to enrich how users browse content matrices."
+  },
+  {
+    "id": "opp-030",
+    "title": "Data Infrastructure Intern",
+    "category": "Data Analysis",
+    "company": "Gidi Metrics Enterprise",
+    "location": "Abuja",
+    "closingDate": "July 14, 2026",
+    "description": "Support the pipeline engineering team in structuring automated migration routines, running table transformations, and documenting schema relationships."
   }
 ]
