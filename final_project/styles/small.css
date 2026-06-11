@@ -74,7 +74,6 @@ main {
     text-align: left;
 }
 
-
 .menu-toggle {
     background: transparent; 
     border: none;            
@@ -121,7 +120,7 @@ main {
 /* Hero Banner */
 .hero-banner {
     position: relative;
-    background-image: url('images/hero-bg.jpg'); 
+    background-image: url('../images/university.webp'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -132,7 +131,6 @@ main {
     border-radius: 8px;
     overflow: hidden;
 }
-
 
 .hero-overlay {
     position: absolute;
@@ -220,7 +218,6 @@ main {
     grid-template-columns: 1fr; 
     gap: 1.25rem;
 }
-
 
 .opportunity-card, .resources-card {
     background: var(--card-bg);
@@ -402,11 +399,27 @@ main {
 
 /* Layout Blocks, Forms and Confirmations */
 .info-content-block {
-    background: white;
+    background-color: #ffffff;
     margin: 1.25rem;
-    padding: 1.5rem;
+    padding: 2rem 1.5rem;
     border: 1px solid var(--border-color);
-    border-radius: 6px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.info-content-block h3 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-family: var(--nav-font);
+}
+
+.info-content-block p {
+    color: var(--text-main);
+    font-size: 1.05rem;
+    line-height: 1.6;
+    margin-bottom: 1.75rem;
 }
 
 .confirmation-container {
@@ -483,7 +496,6 @@ main {
     margin-bottom: 2rem;
 }
 
-
 .text-center {
     text-align: center;
 }
@@ -505,39 +517,16 @@ main {
     line-height: 1.5;
 }
 
-
-.info-content-block {
-    background-color: #ffffff;
-    padding: 2rem 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
-}
-
-.info-content-block h3 {
-    color: var(--primary-color, #1a365d);
-    font-size: 1.5rem;
-    margin-top: 0;
-    margin-bottom: 1rem;
-    font-family: var(--nav-font);
-}
-
-.info-content-block p {
-    color: var(--text-color, #2d3748);
-    font-size: 1.05rem;
-    line-height: 1.6;
-    margin-bottom: 1.75rem;
-}
-
 .values-callout {
-    background-color: var(--bg-light, #f7fafc);
-    border-left: 4px solid var(--accent-color, #008b8b);
+    background-color: var(--bg-light);
+    border-left: 4px solid var(--accent-color);
     padding: 1.5rem;
     border-radius: 0 6px 6px 0;
     margin-top: 2rem;
 }
 
 .values-callout h4 {
-    color: var(--primary-dark, #0f2444);
+    color: var(--primary-dark);
     font-size: 1.2rem;
     margin-top: 0;
     margin-bottom: 1rem;
@@ -555,7 +544,7 @@ main {
     margin-bottom: 1rem;
     font-size: 1rem;
     line-height: 1.5;
-    color: var(--text-color, #2d3748);
+    color: var(--text-main);
 }
 
 .values-callout li:last-child {
@@ -567,23 +556,22 @@ main {
     position: absolute;
     left: 0.25rem;
     top: -0.1rem;
-    color: var(--accent-color, #008b8b);
+    color: var(--accent-color);
     font-size: 1.4rem;
 }
 
 .values-callout li strong {
-    color: var(--primary-color, #1a365d);
+    color: var(--primary-color);
 }
 
 .filter-section {
-    background-color: var(--white, #ffffff);
+    background-color: #ffffff;
     padding: 1.5rem;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
     margin: 1.25rem auto;
     max-width: 1200px;
 }
-
 
 .filter-form {
     display: flex;
@@ -604,7 +592,7 @@ main {
 .filter-group label {
     font-size: 0.95rem;
     font-weight: 600;
-    color: var(--primary-color, #1a365d);
+    color: var(--primary-color);
     text-align: left; 
 }
 
@@ -614,8 +602,8 @@ main {
     font-size: 1rem;
     border: 1px solid #cbd5e0;
     border-radius: 4px;
-    background-color: var(--white, #ffffff);
-    color: var(--text-color, #2d3748);
+    background-color: #ffffff;
+    color: var(--text-main);
     font-family: inherit;
     box-sizing: border-box;
     cursor: pointer;
@@ -624,7 +612,7 @@ main {
 
 .filter-group select:focus {
     outline: none;
-    border-color: var(--accent-color, #008b8b);
+    border-color: var(--accent-color);
     box-shadow: 0 0 0 3px rgba(0, 139, 139, 0.2);
 }
 
@@ -645,7 +633,6 @@ main {
     width: 100%;
     box-sizing: border-box;
 }
-
 
 .story-split-wrapper {
     max-width: 1140px;
@@ -668,7 +655,6 @@ main {
     display: block;
 }
 
-
 .story-text-column {
     width: 100%;
     text-align: left;
@@ -688,7 +674,6 @@ main {
     color: #94a3b8; 
     margin: 0 0 1.25rem 0;
 }
-
 
 .story-text-column p:last-child {
     margin-bottom: 0;
