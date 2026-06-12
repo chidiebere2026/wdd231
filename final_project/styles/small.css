@@ -4,7 +4,7 @@
     --primary-dark: #0f2347;
     --accent-color: #008b8b;
     --accent-hover: #006666;
-    --banana-cream: #FDE74C;
+    --bronze-spice: #CC5803;
     --bg-light: #edf2f7;
     --card-bg: #ffffff;
     --text-main: #2d3748;
@@ -18,6 +18,7 @@
     --primary-depth: #0f2347; 
     --border-grey: #e2e8f0;
     --accent-teal: #008b8b;
+    --canary-yellow: #F2F230;
 }
 
 /* Base Configuration Standard Reset */
@@ -181,7 +182,7 @@ main {
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 1rem;
-    color: var(--banana-cream);
+    color: var(--canary-yellow);
 }
 
 .hero-text {
