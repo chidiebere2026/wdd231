@@ -4,6 +4,7 @@
     --primary-dark: #0f2347;
     --accent-color: #008b8b;
     --accent-hover: #006666;
+    --banana-cream: #FDE74C;
     --bg-light: #edf2f7;
     --card-bg: #ffffff;
     --text-main: #2d3748;
@@ -180,14 +181,15 @@ main {
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 1rem;
-    color: #ffffff;
+    color: var(--banana-cream);
 }
 
-.hero-text-wrapper p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    margin-bottom: 2rem;
-    color: #edf2f7;
+.hero-text {
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    display: inline-block;
 }
 
 .hero-cta-btn {
@@ -200,6 +202,7 @@ main {
     font-weight: 600;
     font-size: 1rem;
     transition: background-color 0.2s ease, transform 0.2s ease;
+    margin-top: 1.5rem;
 }
 
 .hero-cta-btn:hover {
