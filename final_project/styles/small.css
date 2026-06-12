@@ -519,13 +519,33 @@ main {
     gap: 0.5rem;
 }
 
+
+.footer-container p {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    flex-wrap: wrap; 
+    text-align: center;
+}
+
 .footer-link {
     color: #cbd5e0;
     text-decoration: none;
+    transition: color 0.2s ease;
 }
 
 .footer-link:hover {
+    color: #ffffff; 
     text-decoration: underline;
+}
+
+
+.footer-separator {
+    color: #4a5568; 
+    -webkit-user-select: none;
+    user-select: none; 
 }
 
 .hero-section {
